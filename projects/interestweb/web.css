@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    color: #422714;
+    background-image: linear-gradient(to bottom right, #b4c08b, #cab982b2);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+main {
+    background-color: #f8f2e3;
+    color: #744e34;
+}
+.center {
+    text-align: center;
+}
+.bolder {
+    font-weight: bold;
+}
+#emphasis {
+    font-style: italic;
+    color: #422714;
+}
+#coloremp {
+    color: #422714;
+}
+.answer1 {
+    color: #744e34;
+}
+h3 {
+    color: #422714;
+}
+h2 {
+    color:#422714;
+}
+dt {
+    color: #422714;
+}
+
+.background1 {
+    background-color: aquamarine;
+}
