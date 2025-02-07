@@ -1,0 +1,20 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:rgba(241, 241, 219, 0.582)
+}
+.firstimg {
+    width: 500px;
+    text-align: center;
+}
+header {
+    text-align: center;
+}
+nav {
+    text-align: center;
+}
+.center {
+    text-align: center;
+}
+.bolder {
+    font-weight: bold;
+}
