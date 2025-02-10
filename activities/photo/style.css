@@ -1,0 +1,17 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(BeigeTextureBack.jpg);
+}
+
+header {
+    text-align: center;
+    font-size: 32px;
+    background-image: url("nature grass.jpg");
+    background-repeat: no-repeat;
+    background-position: 600px;
+
+
+}
+.center {
+    text-align: center;
+}
