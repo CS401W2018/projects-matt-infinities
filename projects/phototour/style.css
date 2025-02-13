@@ -4,6 +4,7 @@ body {
     background-image: url("background.jpg");
     position: relative;
     color: white;
+    background-repeat: repeat;
 }
 nav {
     text-align: center;
@@ -14,6 +15,7 @@ h1 {
 nav a {
     color:rgba(208, 252, 150, 0.753)
 }
+
 header {
     background-image: url("flower1.png");
     background-repeat: no-repeat;
@@ -23,8 +25,9 @@ ul {
     list-style: none;
 }
 .centered {
-    text-align: center;
-    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #waterfalls {
