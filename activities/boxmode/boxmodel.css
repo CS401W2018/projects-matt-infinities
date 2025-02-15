@@ -21,3 +21,9 @@ header h1 {
 .figmage img {
     width: 100%;
 }
+.centered {
+    text-align: center;
+}
+.bolder {
+    font-weight: bold;
+}
