@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+.wrapper {
+    width: 80%;
+    background-color: white;
+    margin: auto;
+    border: thin solid black;
+    border-radius: 5px;
+}
+.clear {
+    clear: both;
+}
+nav a {
+    display: block;
+    padding: 10px 15px;
+    background-color: rgba(167, 209, 214, 0.966);
+    color: black;
+    border: 5px;
+    float: left;
+    margin-left: 25px;
+}
+nav a:hover {
+    color: rgba(167, 209, 214, 0.966);
+    background-color: black;
+}
+.centered {
+    text-align: center;
+}
