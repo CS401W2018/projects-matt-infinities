@@ -13,3 +13,12 @@ body {
     background-color: rgb(190, 240, 240);
     margin: 5px;
 }
+h1 {
+    text-align: center;
+}
+h2 {
+    text-align: center;
+}
+.bolder {
+    font-weight: bold;
+}
