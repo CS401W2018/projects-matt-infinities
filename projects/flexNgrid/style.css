@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav a {
+    display: block;
+    text-align: center;
+    background-color: rgb(248, 239, 213);
+    padding: 10px;
+    width: 100px;
+    color: black;
+    border: thin solid black;
+}
+nav a:hover{
+    background-color: black;
+    color: rgb(248, 239, 213);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(206, 232, 253, 0.959);
+    gap: 75px;
+    padding: 10px;
+    width: auto;
+    border: thin solid black;
+    margin: 0px;
+}
+header {
+    background-color: rgb(42, 77, 129);
+    color: aliceblue;
+    margin: 0px;
+    padding: 5px;
+    border: thin solid black;
+}
+.centered {
+    text-align: center;
+}
+aside {
+    margin: 0px;
+    padding: 10px;
+    width: 25%;
+    border-left: thin solid black;
+    border-right: thin solid black;
+    border-bottom: thin solid black;
+}
+.group1 {
+    background-color: rgb(231, 247, 253);x
+}
