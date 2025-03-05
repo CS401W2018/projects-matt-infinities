@@ -1,15 +1,17 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(200, 207, 181);
     margin: 0;
-    background-color: rgb(176, 184, 156);
 }
 header {
     background-color: antiquewhite;
 }
 header h1 {
     margin: 0;
+    font-size: 50px;
     text-align: center;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
 }
 .card {
     border: thin solid black;
@@ -27,14 +29,14 @@ header h1 {
     text-align: center;
 }
 nav {
-    background-color: rgba(214, 191, 141, 0.678);
+    background-color: rgba(174, 180, 138, 0.678);
     display: flex;
     justify-content: space-evenly;
-    padding: 5px;
+    padding: 10px;
 }
 nav a {
     display: block;
-    background-color:rgba(153, 184, 66, 0.411) ;
+    background-color:rgba(255, 255, 255, 0.411) ;
     padding: 10px;
     color: black;
     border-radius: 5px;
@@ -52,9 +54,43 @@ nav a:hover {
 h2 {
     text-align: center;
 }
+main {
+    margin: 15px;
+}
 main h1 {
     text-align: center;
 }
 .strong {
     font-weight: bold;
+}
+.card:hover {
+    background-color: rgba(2, 59, 12, 0.979);
+    color: azure;
+    box-shadow: 5px 5px 10px rgba(9, 31, 0, 0.849);
+    padding: 2px;
+}
+footer {
+    margin: 15px;
+}
+@media ONLY screen AND (max-width: 600px) {
+    .parent {
+        flex-direction: column 1fr 1fr;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+    .card {
+
+    }
+    .feature {
+        order: -1;
+    }
+}
+@media ONLY screen AND (max-width: 450px) {
+    nav {
+        flex-direction: column 1fr 1fr;
+        flex-wrap: wrap;
+        align-items: center ;
+        gap: 5px;
+    }
 }
