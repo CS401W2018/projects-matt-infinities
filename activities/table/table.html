@@ -11,102 +11,111 @@
     <hr>
     <main>
         <h1>Tables</h1>
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Department</th>
-                    <th>Number</th>
-                    <th>Time</th>
-                    <th>Location</th>
-                    <th>Credits</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th id="fall2024" colspan="5">Fall Semester 2024</th>
-                </tr>
-                <tr>
-                    <td>CS</td>
-                    <td>140</td>
-                    <td>12:00 PM - 12:50 PM</td>
-                    <td>Portables 3</td>
-                    <td rowspan="5">3 CDT</td>
-                </tr>
-                <tr>
-                    <td>CS</td>
-                    <td>202</td>
-                    <td>1:00 PM - 1:50 PM</td>
-                    <td>Portables 2</td>
-                    <!-- <td>3 CDT</td> -->
-                </tr>
-                <tr>
-                    <td>CS</td>
-                    <td>101</td>
-                    <td>2:00 PM - 2:50 PM</td>
-                    <td>Portables 1</td>
-                    <!-- <td>3 CDT</td> -->
-                </tr>
-                <tr>
-                    <td>IT</td>
-                    <td>280</td>
-                    <td>3:00 PM - 3:50 PM</td>
-                    <td>Portables 2</td>
-                    <!-- <td>3 CDT</td> -->
-                </tr>
-                <tr>
-                    <td>IT</td>
-                    <td>250</td>
-                    <td>9:00 AM - 11:50 AM</td>
-                    <td>Portables 2</td>
-                    <!-- <td>3 CDT</td> -->
-                </tr>
-                <tr>
-                    <th id="spring2024" colspan="5">Spring 2024</th>
-                </tr>
-                <tr>
-                    <td>EIL</td>
-                    <td>320</td>
-                    <td>12:0 PM - 1:15 PM</td>
-                    <td>McKay 154</td>
-                    <td>4 CDT</td>
-                </tr>
-                <tr>
-                    <td>IT</td>
-                    <td>224</td>
-                    <td>3:30 PM - 4:45 PM</td>
-                    <td>Portables 1</td>
-                    <td>3 CDT</td>
-                </tr>
-                <tr>
-                    <td>EIL</td>
-                    <td>201</td>
-                    <td>9:30 AM - 10:15 AM</td>
-                    <td>McKay 120A</td>
-                    <td>2 CDT</td>
-                </tr>
-                <tr>
-                    <td>STDEV</td>
-                    <td>100</td>
-                    <td>8:00 AM - 8:50 AM</td>
-                    <td>CAC</td>
-                    <td>1 CDT</td>
-                </tr>
-            </tbody>
-            <tfoot>
-                <tr>
-                    <th id="totalcdt" colspan="4">Total Credits</th>
-                    <td headers="totalcdt">25 CDT</td>
-                </tr>
-            </tfoot>
-        </table>
+        <div class="centerFlex">
+            <table class="schedule">
+                <caption class="bolder">Class Schedule</caption>
+                <thead>
+                    <tr class="collapse">
+                        <th>Department</th>
+                        <th>Number</th>
+                        <th>Time</th>
+                        <th>Location</th>
+                        <th>Credits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th id="fall2024" colspan="5">Fall Semester 2024</th>
+                    </tr>
+                    <tr>
+                        <td>CS</td>
+                        <td>140</td>
+                        <td>12:00 PM - 12:50 PM</td>
+                        <td>Portables 3</td>
+                        <td>3 CDT</td>
+                    </tr>
+                    <tr>
+                        <td>CS</td>
+                        <td>202</td>
+                        <td>1:00 PM - 1:50 PM</td>
+                        <td>Portables 2</td>
+                        <td>3 CDT</td>
+                    </tr>
+                    <tr>
+                        <td>CS</td>
+                        <td>101</td>
+                        <td>2:00 PM - 2:50 PM</td>
+                        <td>Portables 1</td>
+                        <td>3 CDT</td>
+                    </tr>
+                    <tr>
+                        <td>IT</td>
+                        <td>280</td>
+                        <td>3:00 PM - 3:50 PM</td>
+                        <td>Portables 2</td>
+                        <td>3 CDT</td>
+                    </tr>
+                    <tr>
+                        <td>IT</td>
+                        <td>250</td>
+                        <td>9:00 AM - 11:50 AM</td>
+                        <td>Portables 2</td>
+                        <td>3 CDT</td>
+                    </tr>
+                    <tr>
+                        <th id="spring2024" colspan="5">Spring 2024</th>
+                    </tr>
+                    <tr>
+                        <td>EIL</td>
+                        <td>320</td>
+                        <td>12:0 PM - 1:15 PM</td>
+                        <td>McKay 154</td>
+                        <td>4 CDT</td>
+                    </tr>
+                    <tr>
+                        <td>IT</td>
+                        <td>224</td>
+                        <td>3:30 PM - 4:45 PM</td>
+                        <td>Portables 1</td>
+                        <td>3 CDT</td>
+                    </tr>
+                    <tr>
+                        <td>EIL</td>
+                        <td>201</td>
+                        <td>9:30 AM - 10:15 AM</td>
+                        <td>McKay 120A</td>
+                        <td>2 CDT</td>
+                    </tr>
+                    <tr>
+                        <td>STDEV</td>
+                        <td>100</td>
+                        <td>8:00 AM - 8:50 AM</td>
+                        <td>CAC</td>
+                        <td>1 CDT</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th id="totalcdt" colspan="4">Total Credits</th>
+                        <th headers="totalcdt">25 CDT</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
         <hr>
-        <h2 class="centered">Answers to Qustions:</h2>
+        <h2 class="centered">Answers to Qustions (10 March 2025):</h2>
         <p class="bolder">When do you use a table?</p>
         <p>The use of tables comes in various different reasons, however not all the time. If you are going to present the data with more than 1 columns and rows, then you should definitely consider using the table in HTML because it will help you organize the data efficiently.</p>
         <p class="bolder">When do you not use a table?</p>
         <p>If you only need columns or rows ONLY, there are possible ways to achieve this efficiently and table aren't that useful for you to organize data effectively.</p>
         <p class="bolder">When do you need to do extra work for table accessibility?</p>
         <p>You have to make sure that the table are accessible to all individuals. Making sure that they are labeled accurately will help you achieve the accessibility of the page and its table. You have to do extra work for table accessibility if there are critical data that should be labeled really well to avoid being sued.</p>
+        <hr>
+        <h2 class="centered">Answers to Qustions (12 March 2025):</h2>
+        <p class="bolder">Why don't we use the border attribute?</p>
+        <p>Using the border attribute is an inefficient way of organizing and customizing the table. It is limited in customization </p>
+        <p class="bolder">What is the easiest way to color every other row a different color?</p>
+        <p></p>
     </main>
     <hr>
     <footer>

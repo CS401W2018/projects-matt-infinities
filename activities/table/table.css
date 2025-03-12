@@ -8,3 +8,35 @@ body {
 .centered {
     text-align: center;
 }
+.schedule {
+    /* border: 3px solid black; */
+    width: 750px;
+    /* box-shadow: 5px 5px 5px gray; */
+    border-radius: 10px;
+    caption-side: top;
+    border-spacing: 0;
+    text-align: center;
+    border-collapse: collapse;
+}
+.schedule th, .schedule td {
+    /* border: thin solid black; */
+    padding: 5px;
+    /* background-color:rgb(255, 250, 233); */
+}
+.schedule thead th {
+    /* border: 2px solid black; */
+    background-color: rgb(215, 233, 245);
+}
+.schedule tfoot th {
+    background-color: rgb(215, 233, 245);
+}
+.schedule tbody tr:nth-child(even) {
+    background-color: rgb(241, 237, 201);
+}
+table {
+    background-color: rgb(255, 250, 233);
+}
+.centerFlex {
+    display: flex;
+    justify-content: center;
+}
