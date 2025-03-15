@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: auto;
+}
+.grouped {
+    display: flex;
+}
+.first {
+    width: 30%;
+    padding: 10px;
+    background-color: rgb(222, 245, 252);
+}
+.second {
+    width: 70%;
+    padding: 10px;
+}
+nav {
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+nav a {
+    display: block;
+    background-color: rgb(17, 35, 114);
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    color: white;
+}
+nav a:hover {
+    color: black;
+    background-color: rgb(0, 81, 255);
+}
+h1 {
+    text-align: center;
+}
+.credit {
+    text-decoration: underline;
+    color: rgb(17, 35, 114);
+}
+aside h2 {
+    text-align: center;
+}
+aside p {
+    text-align: justify;
+}
+.ranking {
+    width: 100%;
+    font-size: large;
+    text-align: center;
+}
+.bolder {
+    font-weight: bold;
+    font-size: 32px;
+}
+.ranking thead th {
+    background-color: rgb(178, 203, 253);
+    padding: 10px;
+    font-size: 24px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.ranking tbody tr:nth-child(even) {
+    background-color: rgb(224, 240, 253);
+}
+.ranking tbody tr {
+    font-size: 20px;
+}
+table caption {
+    border-top: thin solid black;
+    border-left: thin solid black;
+    border-right: thin solid black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 5px;
+}
