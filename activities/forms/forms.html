@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <header><h1>Web Design</h1></header>
+    <main>
+        <form action="processing.html" method="post">
+            <div class="form-row">
+                <label for="fname">Full Name:</label>
+                <input type="text" name="fullname" id="fname" value="Matthew" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-row">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone">
+            </div>
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" name="password" placeholder="your@email.com" id="password" required>
+            </div>
+            <div class="form-row">
+                <label for="state">State:</label>
+                <select name="state" id="state">
+                    <option value="blank"></option>
+                    <option value="CO">Colorado</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="UT">Utah</option>
+                    <option value="CA">California</option>
+                </select>
+            </div>
+            <div>
+                <div>Year in School:</div>
+                <label><input type="radio" name="year" value="freshmen">freshmen</label>
+                <label><input type="radio" name="year" value="sophomore">Sophomore</label>
+                <label><input type="radio" name="year" value="junior">Juinior</label>
+                <label><input type="radio" name="year" value="Senior">Senior</label>
+            </div>
+            <div class="form-row">
+                <input type="submit">
+            </div>
+        </form>
+        <hr>
+        <h2>Answers to Quesitons:</h2>
+        <p class="bolder"></p>
+        <p></p>
+        <p class="bolder"></p>
+        <p></p>
+        <p class="bolder"></p>
+        <p></p>
+    </main>
+    <footer>
+        <p>&copy; March 2025 Matthew Leoncio</p>
+    </footer>
+</body>
+</html>
