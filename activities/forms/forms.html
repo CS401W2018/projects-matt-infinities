@@ -10,42 +10,54 @@
     <header><h1>Web Design</h1></header>
     <main>
         <form action="processing.html" method="post">
-            <div class="form-row">
-                <label for="fname">Full Name:</label>
-                <input type="text" name="fullname" id="fname" value="Matthew" required>
-            </div>
-            <div class="form-row">
-                <label for="email">Email:</label>
-                <input type="email" name="email" placeholder="your@email.com" id="email" required>
-            </div>
-            <div class="form-row">
-                <label for="phone">Phone Number</label>
-                <input type="number" name="phone" id="phone">
-            </div>
-            <div class="form-row">
-                <label for="password">Password:</label>
-                <input type="password" name="password" id="password" required>
-            </div>
-            <div class="form-row">
-                <label for="state">State:</label>
-                <select name="state" id="state">
-                    <option value="blank"></option>
-                    <option value="CO">Colorado</option>
-                    <option value="HI">Hawaii</option>
-                    <option value="UT">Utah</option>
-                    <option value="CA">California</option>
-                </select>
-            </div>
-            <div>
-                <div>Year in School:</div>
-                <label><input type="radio" name="year" value="freshmen">Freshmen</label>
-                <label><input type="radio" name="year" value="sophomore">Sophomore</label>
-                <label><input type="radio" name="year" value="junior">Juinior</label>
-                <label><input type="radio" name="year" value="Senior">Senior</label>
-            </div>
-            <div class="form-row">
-                <input type="submit">
-            </div>
+            <fieldset>
+                <legend>Create Account</legend>
+                <div class="form-row">
+                    <label for="fname">Full Name:</label>
+                    <input type="text" name="fullname" id="fname" value="Matthew" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="your@email.com" id="email" required>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" name="phone" id="phone">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="form-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state">
+                        <option value="blank"></option>
+                        <option value="CO">Colorado</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                        <option value="CA">California</option>
+                    </select>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer">Year in School:</div>
+                    <label><input type="radio" name="year" value="freshmen">Freshmen</label>
+                    <label><input type="radio" name="year" value="sophomore">Sophomore</label>
+                    <label><input type="radio" name="year" value="junior">Juinior</label>
+                    <label><input type="radio" name="year" value="Senior">Senior</label>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer"></div>
+                    <label><input type="checkbox" name="remember" id="remember" checked>Remember Me</label>
+                </div>
+                <div class="form-row">
+                    <label for="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit">                
+                </div>
+            </fieldset>
         </form>
         <hr>
         <h2>Answers to Quesitons:</h2>
@@ -55,6 +67,12 @@
         <p>A form tag with a method attribute will help your page customize how it communicates with the server. There are two types of method, get and post.</p>
         <p class="bolder">What is the difference between a "POST" and a "GET"?</p>
         <p>There is a wide difference in these two. The Get will tell the server that the data entered and transfered is via URL, it means that whatever you entered in the form, it will show it to the URL. This is effective for researches and sharing because it will give you the accurate information you entered in the form so others can have the same results as what you have entered. The post on the other hand works privately, this is commonly use for pages with sensitive information such as password, personal information, etc. This method will communicate with the server by sending the data on the background without showing it in the URL.</p>
+        <hr>
+        <h2>19 March 2025</h2>
+        <p class="bolder">What are different ways to style your form?</p>
+        <p></p>
+        <p class="bolder">Why does the professor like to use flex?</p>
+        <p></p>
     </main>
     <hr>
     <footer>
