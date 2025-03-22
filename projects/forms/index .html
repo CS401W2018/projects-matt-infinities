@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="formstyle.css" media="screen">
 </head>
 <body>
-    <header><h1>SHOP INFINITIES</h1></header>
+    <header><h1 class="centeredH1">SHOP INFINITIES</h1></header>
     <main>
         <form action="">
             <fieldset>
-                <legend>Create Account</legend>
-                    <div>
+                <legend>Get Started</legend>
+                    <div class="form-row">
                         <label for="fname">First Name:</label>
                         <input type="text" name="firstname" id="fname" value="John" required>
                     </div>
-                    <div>
+                    <div class="form-row">
                         <label for="lname">Last Name:</label>
                         <input type="text" name="lastname" id="lname" value="Doe" required>
                     </div>
@@ -48,7 +48,7 @@
                         </select>
                     </div>
                     <div class="radio-row">
-                        <div class="form-spacer">Membership: </div>
+                        <div class="form-spacer1">Membership: </div>
                         <label><input type="radio" name="membership" value="Bronze">Bronze</label>
                         <label><input type="radio" name="membership" value="Silver">Silver</label>
                         <label><input type="radio" name="membership" value="Gold">Gold</label>
@@ -56,15 +56,15 @@
                         <label><input type="radio" name="membership" value="Diamond">Diamond</label>
                     </div>
                     <div class="radio-row">
-                        <div class="form-spacer"></div>
-                        <label><input type="checkbox" name="remember" id="remember" checked>Remember Me</label>
+                        <div class="form-spacer1"></div>
+                        <label><input type="checkbox" name="remember" id="remember" checked>Agree to the terms and conditions.</label>
                     </div>
                     <div class="form-row">
-                        <label for="yourbio">Your Bio:</label>
+                        <label for="yourbio">Add Your Bio:</label>
                         <textarea name="yourbio" id="yourbio"></textarea>
                     </div>
                     <div class="form-row">
-                        <div class="form-spacer"></div>
+                        <div class="form-spacer2"></div>
                         <input type="submit" value="Create Account">                
                     </div>
             </fieldset>

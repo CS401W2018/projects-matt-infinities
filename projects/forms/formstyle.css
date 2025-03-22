@@ -1,3 +1,97 @@
+@font-face {
+    font-family: 'ShadowsIntoLight';
+    src: url(ShadowsIntoLight-Regular.ttf);
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    background-color: #fefae0;
+}
+.form-row {
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+}
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+.form-row input {
+    border-radius: 5px;
+    width: auto;
+}
+.centeredH1 {
+    font-family: 'ShadowsIntoLight', Arial, Helvetica, sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #283618;
+    margin: 5px;
+}
+.form-spacer1 {
+    width: 162px;
+    text-align: right;
+}
+.form-spacer2 {
+    width: 150px;
+    text-align: right;
+}
+.radio-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+.form-row input:not([type="submit"]) {
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fefae0;
+}
+.form-row input:not([type="submit"]):focus {
+    background-color: #d4a373;
+    border: 2px solid black;
+}
+.form-row input[type="submit"] {
+    padding: 5px;
+    background-color: #dda15e;
+    font-size: large;
+    border-radius: 5px;
+}
+.form-row input[type="submit"]:hover {
+    background-color: #606c38;
+    color: white;
+}
+.form-row select {
+    background-color:#fefae0;
+    padding: 4px;
+    border: 2px solid black
+}
+.form-row textarea {
+    background-color: #fefae0;
+}
+.form-row select:focus {
+    background-color:#d4a373
+}
+fieldset {
+    background-color: #e9edc9;
+    color: ;
+    border-radius: 10px;
+}
+legend {
+    background-color: #dda15e;
+    padding: 7.5px 15px;
+    border: thin solid black;
+    border-radius: 5px;
+}
+
+@media ONLY screen AND (max-width: 600px) {
+    .form-row, .radio-row {
+        flex-direction: column;
+    }
+    .form-spacer1 {
+        text-align: left;
+    }
+    .form-row label {
+        text-align: left;
+    }
 }
