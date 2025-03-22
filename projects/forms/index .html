@@ -8,14 +8,64 @@
     <link rel="stylesheet" href="formstyle.css" media="screen">
 </head>
 <body>
-    <header><h1>Web Design</h1></header>
+    <header><h1>SHOP INFINITIES</h1></header>
     <main>
         <form action="">
             <fieldset>
                 <legend>Create Account</legend>
                     <div>
                         <label for="fname">First Name:</label>
-                        <input type="text" name="firstname" id="fname" value="Matthew" required>
+                        <input type="text" name="firstname" id="fname" value="John" required>
+                    </div>
+                    <div>
+                        <label for="lname">Last Name:</label>
+                        <input type="text" name="lastname" id="lname" value="Doe" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" placeholder="your@email.com" id="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="phone">Phone Number</label>
+                        <input type="number" name="phone" id="phone">
+                    </div>
+                    <div class="form-row">
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="region">Region:</label>
+                        <select name="region" id="region">
+                            <option value="blank"></option>
+                            <option value="NA">North America</option>
+                            <option value="AS">China</option>
+                            <option value="SA">South America</option>
+                            <option value="OC">Oceania</option>
+                            <option value="OC">Europe</option>
+                            <option value="OC">South-East Asia</option>
+                            <option value="OC">Australia</option>
+                            <option value="OC">Pacific</option>
+                        </select>
+                    </div>
+                    <div class="radio-row">
+                        <div class="form-spacer">Membership: </div>
+                        <label><input type="radio" name="membership" value="Bronze">Bronze</label>
+                        <label><input type="radio" name="membership" value="Silver">Silver</label>
+                        <label><input type="radio" name="membership" value="Gold">Gold</label>
+                        <label><input type="radio" name="membership" value="Platinum">Platinum</label>
+                        <label><input type="radio" name="membership" value="Diamond">Diamond</label>
+                    </div>
+                    <div class="radio-row">
+                        <div class="form-spacer"></div>
+                        <label><input type="checkbox" name="remember" id="remember" checked>Remember Me</label>
+                    </div>
+                    <div class="form-row">
+                        <label for="yourbio">Your Bio:</label>
+                        <textarea name="yourbio" id="yourbio"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-spacer"></div>
+                        <input type="submit" value="Create Account">                
                     </div>
             </fieldset>
         </form>
