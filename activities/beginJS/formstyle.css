@@ -95,3 +95,9 @@ legend {
         text-align: left;
     }
 }
+.centeredH2 {
+    text-align: center;
+}
+.bolder {
+    font-weight: bolder;
+}
