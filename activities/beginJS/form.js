@@ -25,7 +25,18 @@ document.getElementById('myform').addEventListener('submit',function(event) {
         Phone: phone,
         Password: password,
         Region: region
+    }
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "submit.json", true);
+    xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            alert("Form Submitted Successfully");
+        } else if (xhr.readyState === 4) {
+            alert("Error Submitting Form");
+        }
     };
 
+    xhr.send(JSON.stringify(formData))
     console.log(formData);
 });
