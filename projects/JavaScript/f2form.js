@@ -1,6 +1,6 @@
 document.getElementById('myform').addEventListener('submit',function(event) {
     event.preventDefault();
-    alert("Form Submitted");
+    alert("Form Submitted and Ready for Initial Verificaiton. Please waait, this will take few seconds only.");
     const fname = document.getElementById('fname').value;
     const lname = document.getElementById('lname').value;
     const email = document.getElementById('email').value;
@@ -9,12 +9,12 @@ document.getElementById('myform').addEventListener('submit',function(event) {
     const region = document.getElementById('region').value;
     
     if (!fname || !lname || !email) {
-        alert("You need to fill the first 3 information. First Name, Last Name, and Email.");
+        alert("ERROR! You need to fill the first 3 information. First Name, Last Name, and Email.");
         return;
     }
 
     if (!phone || phone < 8080000000) {
-        alert("You need to have the right regional phone. The acceptable ones are those above 808")
+        alert("ERROR! You need to have the right regional phone. The acceptable ones are those above 808")
         return;
     }
 
