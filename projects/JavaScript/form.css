@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'ShadowsIntoLight';
+    src: url(ShadowsIntoLight-Regular.ttf);
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    background-color: #eae0d5;
+}
+.form-row {
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+}
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+.form-row input {
+    border-radius: 5px;
+    width: auto;
+}
+.centeredH1 {
+    font-family: 'ShadowsIntoLight', Arial, Helvetica, sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: #22333b;
+    margin: 5px;
+}
+.form-spacer1 {
+    width: 162px;
+    text-align: right;
+}
+.form-spacer2 {
+    width: 150px;
+    text-align: right;
+}
+.radio-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+.form-row input:not([type="submit"]) {
+    padding: 5px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ecdcc9b0;
+}
+.form-row input:not([type="submit"]):focus {
+    background-color: #143c58;
+    border: 2px solid black;
+    color: white;
+}
+.form-row input[type="submit"] {
+    padding: 5px;
+    background-color: #5e503f;
+    font-size: large;
+    border-radius: 5px;
+    color: white;
+}
+.form-row input[type="submit"]:hover {
+    background-color: #22333b;
+    color: white;
+}
+.form-row select {
+    background-color:#ecdcc9b0;
+    padding: 4px;
+    border: 2px solid black
+}
+.form-row textarea {
+    background-color: #ecdcc9b0;
+}
+.form-row select:focus {
+    background-color:#143c58;
+    color: white;
+}
+fieldset {
+    background-color: #edf6f9;
+    color: ;
+    border-radius: 10px;
+}
+legend {
+    background-color: #5e503f;
+    padding: 7.5px 15px;
+    border: thin solid black;
+    border-radius: 5px;
+    color: white;
+}
+
+@media ONLY screen AND (max-width: 600px) {
+    .form-row, .radio-row {
+        flex-direction: column;
+    }
+    .form-spacer1 {
+        text-align: left;
+    }
+    .form-row label {
+        text-align: left;
+    }
+}
+.centeredH2 {
+    text-align: center;
+}
+.bolder {
+    font-weight: bolder;
+}
