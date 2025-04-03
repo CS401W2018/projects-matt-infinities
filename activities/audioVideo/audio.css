@@ -4,3 +4,6 @@ body {
 iframe {
     border: 0;
 }
+.bolder {
+    font-weight: bold;
+}
