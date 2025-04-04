@@ -7,10 +7,11 @@ body {
 }
 span {
     text-decoration: underline;
-    padding: 5px;
+    padding: 10px;
 }
 span:hover {
     background-color: rgb(152, 167, 167, 0.15);
+    border-radius: 15px;
 }
 nav {
     display: flex;
@@ -26,7 +27,8 @@ nav a {
     font-size: 28px;
     color: rgb(22, 67, 104);
     text-align: center;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 15px;
 }
 nav a:hover {
     background-color: rgb(152, 167, 167, 0.15);
