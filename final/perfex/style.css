@@ -19,7 +19,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 35px;
-    font-size: 28px;    
+    font-size: 28px;
 }
 nav a {
     display: block;
@@ -33,6 +33,9 @@ nav a {
 nav a:hover {
     background-color: rgb(152, 167, 167, 0.15);
     color: black;
+}
+.centered {
+    text-align: center;
 }
 .group1 {
     display: flex;
@@ -50,6 +53,133 @@ header {
 }
 .motto {
     margin-top: 5px;
-    color: rgb(82, 81, 81);
+    color: rgb(90, 89, 89);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+main {
+    margin: 0;
+    background-image: url(/final/perfex/images/mens_perfume.jpg);
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    padding: 35px;
+}
+.motto2 {
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 75px;
+}
+.catch {
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.motto3 {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+.group2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media ONLY screen AND (max-width: 600px) {
+    .group1 {
+        flex-direction: column;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .catch {
+        flex-direction: column;
+    }
+}
+@media ONLY screen AND (max-width: 1500px) {
+    .group1 {
+        flex-direction: column;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .group2 {
+        flex-direction: column;
+    }
+    .catch {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.perfumeTable {
+    color: white;
+    font-size: 32px;
+    width: auto;
+    text-align: center;
+    background-color: rgb(245, 243, 243, 0.15);
+}
+.centerFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.perfumeTable th, .perfumeTable td {
+    padding: 5px;
+}
+.perfumeTable th {
+    font-size: 40px;
+}
+.perfumeTable tbody tr:nth-child(odd) {
+    background-color: rgb(243, 248, 253, .15);
+}
+.darker {
+    color: rgb(0, 0, 0);
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-evenly;
+    background-color: rgb(233, 242, 250, .35);
+    width: 650px;
+    height: 450px;
+}
+.content1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+figcaption {
+    padding: 10px
+}
+.caption {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    color: white;
+}
+.scent {
+    font-size: 32px;
+    font-weight: bold;
+}
+.trivia {
+    font-size: 18px;
+}
+@media ONLY screen AND (max-width: 800px){
+    .content1 {
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .card {
+        height: 350px;
+        width: 600px;
+        border-radius: 10px;
+    }
 }

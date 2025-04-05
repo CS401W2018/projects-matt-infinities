@@ -29,7 +29,7 @@ body {
 .schedule tfoot th {
     background-color: rgb(215, 233, 245);
 }
-.schedule tbody tr:nth-child(even) {
+.schedule tbody tr:nth-child(odd) {
     background-color: rgb(241, 237, 201);
 }
 table {
