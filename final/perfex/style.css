@@ -58,7 +58,7 @@ header {
 }
 main {
     margin: 0;
-    background-image: url(/final/perfex/images/mens_perfume.jpg);
+    background-image: url(images/mens_perfume.jpg);
     background-repeat: none;
     background-size: cover;
     background-position: center;

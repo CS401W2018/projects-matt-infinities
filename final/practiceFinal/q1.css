@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav a {
+    display: block;
+    padding: 10px;
+}
+main div {
+    margin: 10px;
+    padding: 10px;
+    border: thin solid black
+}
