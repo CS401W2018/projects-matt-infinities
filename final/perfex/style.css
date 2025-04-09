@@ -2,16 +2,31 @@
     font-family: 'Hurricane-Regular';
     src: url(Hurricane-Regular.ttf)
 }
+@font-face {
+    font-family: 'Quicksand';
+    src: url(Quicksand-VariableFont_wght.ttf)
+}
+@font-face {
+    font-family: 'Raleway';
+    src: url(Raleway-VariableFont_wght.ttf)
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 span {
     text-decoration: underline;
     padding: 10px;
+    font-size: 20px;
 }
 span:hover {
     background-color: rgb(152, 167, 167, 0.15);
     border-radius: 15px;
+}
+#nav1 {
+    order: 1;
+}
+#nav2 {
+    order: 3;
 }
 nav {
     display: flex;
@@ -24,7 +39,7 @@ nav {
 nav a {
     display: block;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 20px;
     color: rgb(22, 67, 104);
     text-align: center;
     padding: 10px;
@@ -34,152 +49,152 @@ nav a:hover {
     background-color: rgb(152, 167, 167, 0.15);
     color: black;
 }
-.centered {
-    text-align: center;
-}
 .group1 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    gap: 35px;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-bottom: 0;
 }
 header {
     text-align: center;
+    order: 2;
 }
 .brand {
     font-family: 'Hurricane-Regular', Courier, monospace ;
-    font-size: 80px;
-    margin-bottom: 5px;
-}
-.motto {
-    margin-top: 5px;
-    color: rgb(90, 89, 89);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 70px;
+    font-weight: 500;
+    margin: 0;
 }
 main {
-    margin: 0;
-    background-image: url(images/mens_perfume.jpg);
-    background-repeat: none;
-    background-size: cover;
-    background-position: center;
-    padding: 35px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
-.motto2 {
-    color: white;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 75px;
+#intPhrase {
+    margin: auto;
+    margin-bottom: 70px;
+    width: 800px;
+}
+.motto1 {
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 400;
 }
 .catch {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+.introPic {
     display: flex;
     flex-direction: row;
-    align-items:flex-start;
-    justify-content: space-evenly;
-    gap: 20px;
-}
-.motto3 {
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: 50px;
-}
-.group2 {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+@media ONLY screen AND (max-width: 1200px) {
+    .group1 {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    header {
+        order: 1;
+    }
+    #nav1 {
+        order: 3;
+    }
+    #nav2 {
+        order: 2;
+    }
+}
+@media ONLY screen AND (max-width: 900px) {
+    #intPhrase {
+        width: auto;
+    }
+    .introPic {
+        flex-direction: column;
+    }
+    #tabCap {
+        width: auto;
+    }
 }
 @media ONLY screen AND (max-width: 600px) {
     .group1 {
         flex-direction: column;
+        gap: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    header {
+        order: -1;
     }
     nav {
         flex-direction: column;
     }
-    .catch {
-        flex-direction: column;
+    #nav1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #nav2 {
+        order: -1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
     }
 }
-@media ONLY screen AND (max-width: 1500px) {
-    .group1 {
-        flex-direction: column;
-    }
-    nav {
-        flex-direction: column;
-    }
-    .group2 {
-        flex-direction: column;
-    }
-    .catch {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+#tablePage {
+    /* border: thin solid black; */
+    padding: 20px;
+    /* background-color: rgba(255, 250, 234, 0.452); */
 }
 .perfumeTable {
-    color: white;
+    font-family: 'Raleway';
+    color: black;
     font-size: 32px;
     width: auto;
     text-align: center;
-    background-color: rgb(245, 243, 243, 0.15);
+}
+.motto2 {
+    margin-top: 10px;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 15px;
 }
 .centerFlex {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.perfumeTable th, .perfumeTable td {
-    padding: 5px;
+.perfumeTable thead th {
+    padding: 15px;
+    font-weight: 500;
+    border-bottom: thin solid black;
 }
-.perfumeTable th {
-    font-size: 40px;
+.perfumeTable tbody td {
+    padding: 5px;
+    font-weight: 200;
 }
 .perfumeTable tbody tr:nth-child(odd) {
-    background-color: rgb(243, 248, 253, .15);
+    background-color: rgba(207, 207, 209, 0.199);
 }
-.darker {
-    color: rgb(0, 0, 0);
+.ing {
+    border-right: thin solid black;
 }
-.card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:space-evenly;
-    background-color: rgb(233, 242, 250, .35);
-    width: 650px;
-    height: 450px;
-}
-.content1 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 15px;
-}
-figcaption {
-    padding: 10px
-}
-.caption {
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: space-around;
-    color: white;
-}
-.scent {
-    font-size: 32px;
-    font-weight: bold;
-}
-.trivia {
-    font-size: 18px;
-}
-@media ONLY screen AND (max-width: 800px){
-    .content1 {
-        flex-direction: column;
-        border-radius: 10px;
-    }
-    .card {
-        height: 350px;
-        width: 600px;
-        border-radius: 10px;
-    }
+#tabCap {
+    width: 800px;
+    margin: auto;
+    margin-bottom: 75px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
