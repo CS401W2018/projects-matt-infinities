@@ -9,20 +9,71 @@
 <body>
     <div class="group1">
         <header>
-            <h1 class="brand">FIND SCENT</h1>
-            <h2 class="motto">Sign Up To Let Us Help You Find Your Scent</h2>
+           <h1 class="brand">PERFEX</h1>
         </header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="SceAndIng.html">Scents & Ingredients</a>
+        <nav id="nav1">
+            <a href="SceAndIng.html">Essence</a>
             <a href="personality.html">Personality</a>
             <a href="longevity.html">Longevity</a>
-            <a href="table.html">Perfume Table</a>
+        </nav>
+        <nav id="nav2">
+            <a href="index.html">Home</a>
+            <a href="table.html">Merge</a>
             <span>Find Scent</span>
         </nav>
     </div>
+    <div class="spacer"></div>
     <main>
-
+        <div id="message"></div>
+        <form action="personality.html" method="get" id="myform">
+            <fieldset>
+                <Legend>Help Discover Your Scent</Legend>
+                <div class="form-row">
+                    <label for="date">Birthdate:</label>
+                    <input type="date" id="birthdate" name="date" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="your@email.com" required>
+                </div>
+                <div class="form-row">
+                    <label for="favWeather">Favorite Weather:</label>
+                    <select name="favWeather" id="favWeather">
+                        <option value="blank"></option>
+                        <option value="">Sunny</option>
+                        <option value="">Rain</option>
+                        <option value="">Fog</option>
+                        <option value="">Snow</option>
+                    </select>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer1">Activity:</div>
+                    <label><input type="radio" name="activity" value="sports">Sports</label>
+                    <label><input type="radio" name="activity" value="travel">Travel</label>
+                    <label><input type="radio" name="activity" value="dating">Date Night</label>
+                    <label><input type="radio" name="activity" value="study">Study</label>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer1">Scent Duration:</div>
+                    <label><input type="radio" name="duration" value="2hrs">2 Hours</label>
+                    <label><input type="radio" name="duration" value="4hrs">4 Hours</label>
+                    <label><input type="radio" name="duration" value="8hrs">8 Hours</label>
+                    <label><input type="radio" name="duration" value="12hrs">12 Hours</label>
+                    <label><input type="radio" name="duration" value="12+hrs">12+ Hours</label>
+                </div>
+                <div class="radio-row">
+                    <div class="form-spacer1">Scent Type:</div>
+                    <label><input type="radio" name="type" value="mild">Mild</label>
+                    <label><input type="radio" name="type" value="bold">Bold</label>
+                    <label><input type="radio" name="type" value="sweet">Sweet</label>
+                    <label><input type="radio" name="type" value="fresh">Fresh</label>
+                </div>
+                <div class="form-row">
+                    <div class="form-spacer2"></div>
+                    <input type="submit" value="Start Discovery">
+                </div>
+            </fieldset>
+        </form>
     </main>
     <footer>
         <p>&copy; April 2025 Matthew Leoncio</p>

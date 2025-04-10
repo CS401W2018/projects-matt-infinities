@@ -162,6 +162,62 @@ main {
 
 
 
+/*ESSENCE PAGE */
+.introPic2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*FORM PAGE*/
+.form-row {
+    display: flex;
+    margin: 10px;
+    gap: 10px;
+}
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+.form-row input {
+    border-radius: 5px;
+    width: auto;
+}
+.form-spacer1 {
+    width: 162px;
+    text-align: right;
+}
+.form-spacer2 {
+    width: 150px;
+    text-align: right;
+}
+.radio-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+.form-row input:not([type="submit"]) {
+    padding: 5px 10px;
+    font-family: ;
+    background-color: ;
+}
+.form-row input:[type="submit"] {
+    padding: 5px;
+    background-color: ;
+    font-size: large;
+    border-radius: 5px;
+    color: ;
+}
+.form-row select {
+    background-color: ;
+    padding: 4px;
+    border: thin solid black;
+}
+
+
 
 /* MEDIA QUERY */
 
