@@ -10,8 +10,12 @@
     font-family: 'Raleway';
     src: url(Raleway-VariableFont_wght.ttf)
 }
+
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 span {
     text-decoration: underline;
@@ -53,8 +57,14 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     gap: 15px;
     margin-bottom: 0;
+    position: fixed;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+    border-bottom: thin solid black;
 }
 header {
     text-align: center;
@@ -66,10 +76,19 @@ header {
     font-weight: 500;
     margin: 0;
 }
+.spacer {
+    height: 150px;
+}
 main {
     margin-left: 50px;
     margin-right: 50px;
 }
+
+
+
+
+/* TABLE SCETION */
+
 #intPhrase {
     margin: auto;
     margin-bottom: 70px;
@@ -93,66 +112,8 @@ main {
     align-items: center;
     justify-content: center;
 }
-@media ONLY screen AND (max-width: 1200px) {
-    .group1 {
-        flex-direction: column;
-        gap: 0;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    header {
-        order: 1;
-    }
-    #nav1 {
-        order: 3;
-    }
-    #nav2 {
-        order: 2;
-    }
-}
-@media ONLY screen AND (max-width: 900px) {
-    #intPhrase {
-        width: auto;
-    }
-    .introPic {
-        flex-direction: column;
-    }
-    #tabCap {
-        width: auto;
-    }
-}
-@media ONLY screen AND (max-width: 600px) {
-    .group1 {
-        flex-direction: column;
-        gap: 0;
-        padding: 0;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    header {
-        order: -1;
-    }
-    nav {
-        flex-direction: column;
-    }
-    #nav1 {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-    #nav2 {
-        order: -1;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-}
 #tablePage {
-    /* border: thin solid black; */
     padding: 20px;
-    /* background-color: rgba(255, 250, 234, 0.452); */
 }
 .perfumeTable {
     font-family: 'Raleway';
@@ -197,4 +158,94 @@ main {
     font-size: 24px;
     font-weight: 300;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+
+
+
+/* MEDIA QUERY */
+
+@media ONLY screen AND (max-width: 1200px) {
+    .group1 {
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    header {
+        order: 1;
+    }
+    #nav1 {
+        order: 3;
+    }
+    #nav2 {
+        order: 2;
+    }
+    #tablePage {
+        margin: 0;
+    }
+    .spacer {
+        height: 200px;
+    }
+    .introPic figure img {
+        width: 400px;
+    }
+    .perfumeTable thead th {
+        font-size: 24px;       
+    }
+    .perfumeTable tbody td {
+        font-size: 20px;
+    }
+}
+@media ONLY screen AND (max-width: 900px) {
+    #intPhrase {
+        width: auto;
+    }
+    main {
+        margin-left: 25px;
+        margin-right: 25px;        
+    }
+    .introPic figure img {
+        width: 400px;
+    }
+    .introPic {
+        flex-direction: column;
+    }
+    #tabCap {
+        width: auto;
+    }
+    .perfumeTable thead th {
+        padding: 5px;
+    }
+    .perfumeTable tbody td {
+        padding: 0;
+    }
+}
+@media ONLY screen AND (max-width: 600px) {
+    .group1 {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    header {
+        order: -1;
+    }
+    nav {
+        flex-direction: column;
+    }
+    #nav1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    #nav2 {
+        order: -1;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
 }
