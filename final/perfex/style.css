@@ -309,6 +309,7 @@ fieldset legend {
     padding: 5px;
     width: 262.5px;
     border: thin solid black;
+    border-radius: 5px;
 }
 #scentDis {
     background-color: #f1f1f1;

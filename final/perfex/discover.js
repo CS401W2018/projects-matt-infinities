@@ -1,15 +1,15 @@
 document.getElementById('myform').addEventListener('submit',function(event) {
     event.preventDefault();
-    alert("Form Submitted and Ready for Initial Verificaiton. Please waait, this will take few seconds only.");
+    alert("Form Submitted and Ready for Initial Verificaiton. Please wait, this will take few seconds only.");
     const bday = document.getElementById('birthdate').value;
-    const lname = document.getElementById('lname').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;
-    const password = document.getElementById('password').value;
-    const region = document.getElementById('region').value;
+    const weather = document.getElementById('favWeather').value;
+    const activity = document.getElementById('activity').value;
+    const duration = document.getElementById('duration').value;
     
-    if (!fname || !lname || !email) {
-        alert("ERROR! You need to fill the first 3 information. First Name, Last Name, and Email.");
+    if (weather === "blank" || !activity === "blank") {
+        alert("ERROR! You need to fill 3 information. Weather, Activity, and Duration.");
         return;
     }
 
@@ -20,11 +20,11 @@ document.getElementById('myform').addEventListener('submit',function(event) {
 
     const formData = {
         Birthdate: bday,
-        Lastname: lname,
         Email: email,
         Phone: phone,
-        Password: password,
-        Region: region
+        Weather: weather,
+        Activity: activity,
+        Duration: duration,
     }
     const xhr = new XMLHttpRequest();
     xhr.open("GET", "submit.json", true);
