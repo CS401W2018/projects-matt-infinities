@@ -6,14 +6,14 @@
     <title>Find Your Scent</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="scentDis">
     <div class="group1">
         <header>
            <h1 class="brand">PERFEX</h1>
         </header>
         <nav id="nav1">
             <a href="SceAndIng.html">Essence</a>
-            <a href="personality.html">Personality</a>
+            <a href="personality.html">Activity</a>
             <a href="longevity.html">Longevity</a>
         </nav>
         <nav id="nav2">
@@ -37,29 +37,39 @@
                     <input type="email" name="email" placeholder="your@email.com" required>
                 </div>
                 <div class="form-row">
-                    <label for="favWeather">Favorite Weather:</label>
+                    <label for="phone">Phone Number</label>
+                    <input type="number" name="phone" id="phone">
+                </div>
+                <div class="form-row">
+                    <label for="favWeather">Weather:</label>
                     <select name="favWeather" id="favWeather">
                         <option value="blank"></option>
-                        <option value="">Sunny</option>
-                        <option value="">Rain</option>
-                        <option value="">Fog</option>
-                        <option value="">Snow</option>
+                        <option value="Sunny">Sunny</option>
+                        <option value="Rain">Rain</option>
+                        <option value="Fog">Fog</option>
+                        <option value="Snow">Snow</option>
                     </select>
                 </div>
-                <div class="radio-row">
-                    <div class="form-spacer1">Activity:</div>
-                    <label><input type="radio" name="activity" value="sports">Sports</label>
-                    <label><input type="radio" name="activity" value="travel">Travel</label>
-                    <label><input type="radio" name="activity" value="dating">Date Night</label>
-                    <label><input type="radio" name="activity" value="study">Study</label>
+                <div class="form-row">
+                    <label for="activity">Activity:</label>
+                    <select name="activity" id="activity">
+                        <option value="blank"></option>
+                        <option value="Sports">Sports</option>
+                        <option value="Travel">Travel</option>
+                        <option value="Dating">Date Night</option>
+                        <option value="Study">Study</option>
+                    </select>
                 </div>
-                <div class="radio-row">
-                    <div class="form-spacer1">Scent Duration:</div>
-                    <label><input type="radio" name="duration" value="2hrs">2 Hours</label>
-                    <label><input type="radio" name="duration" value="4hrs">4 Hours</label>
-                    <label><input type="radio" name="duration" value="8hrs">8 Hours</label>
-                    <label><input type="radio" name="duration" value="12hrs">12 Hours</label>
-                    <label><input type="radio" name="duration" value="12+hrs">12+ Hours</label>
+                <div class="form-row">
+                    <label for="duration">Duration:</label>
+                    <select name="duration" id="duration">
+                        <option value="blank"></option>
+                        <option value="two">2 Hours</option>
+                        <option value="four">4 Hours</option>
+                        <option value="eight">8 Hours</option>
+                        <option value="twelve">12 Hours</option>
+                        <option value="12plus">12+ Hours</option>
+                    </select>
                 </div>
                 <div class="radio-row">
                     <div class="form-spacer1">Scent Type:</div>
@@ -76,7 +86,12 @@
         </form>
     </main>
     <footer>
-        <p>&copy; April 2025 Matthew Leoncio</p>
+        <div class="footContent">
+            <h1 class="brandFoot">PERFEX</h1>
+            <p class="copyright">&copy; April 2025 Matthew Leoncio</p>
+            <p class="claims">All content is personally and originally created by me. Unauthorized use, copying, or distribution is prohibited. This website reflects my own work and creativity. For permissions or collaboration inquiries, feel free to contact me at (808) 456-1234.</p>
+        </div>
     </footer>
+    <script src="discover.js"></script>
 </body>
 </html>

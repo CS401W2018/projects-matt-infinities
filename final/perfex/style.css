@@ -11,16 +11,15 @@
     src: url(Raleway-VariableFont_wght.ttf)
 }
 
-
-
+/*HOME PAGE*/
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
     margin: 0;
 }
 span {
     text-decoration: underline;
     padding: 10px;
-    font-size: 20px;
+    font-size: 24px;
 }
 span:hover {
     background-color: rgb(152, 167, 167, 0.15);
@@ -38,12 +37,12 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 35px;
-    font-size: 28px;
+    font-weight: 400;
 }
 nav a {
     display: block;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
     color: rgb(22, 67, 104);
     text-align: center;
     padding: 10px;
@@ -82,13 +81,38 @@ header {
 main {
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 200px;
+}
+.footContent {
+    background-color: #413731;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+}
+.brandFoot {
+        font-family: 'Hurricane-Regular', Courier, monospace ;
+        font-size: 50px;
+        font-weight: 500;
+        color: white;
+        border-bottom: thin solid white;
+        width: 300px;
+        text-align: center;
+}
+.copyright {
+    color: white;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+.claims {
+    color: white;
+    text-align: center;
+    width: 750px;
+    margin-top: 0;
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
 
 
-
-
 /* TABLE SCETION */
-
 #intPhrase {
     margin: auto;
     margin-bottom: 70px;
@@ -163,18 +187,82 @@ main {
 
 
 /*ESSENCE PAGE */
+.group1Ex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+    border-bottom: thin solid black;
+}
 .introPic2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 50px;
+}
+.imgWrap {
+    position: relative;
+    width: 1000px;
+}
+.imgWrap img {
+    width: 100%;
+    display: block;
+    transition: filter 0.5s ease;
+}
+.imgWrap:hover img {
+    filter: brightness(50%);
+}
+.imgWrap figcaption {
+    position: absolute;
+    width: 50%;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    bottom: 0;
+}
+.plant {
+    font-size: 38px;
+    font-weight: 500;
+}
+.explain {
+    font-size: 28px;
+    font-weight: 200;
 }
 
 
 
 /*FORM PAGE*/
+form {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+fieldset {
+    width: 650px;
+    border-radius: 10px;
+}
+fieldset legend {
+    font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: white;
+    background-color: #413731;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
 .form-row {
     display: flex;
+    flex-direction: row;
+    align-items: center;
     margin: 10px;
     gap: 10px;
 }
@@ -184,6 +272,7 @@ main {
 }
 .form-row input {
     border-radius: 5px;
+    border: thin solid black;
     width: auto;
 }
 .form-spacer1 {
@@ -200,27 +289,34 @@ main {
     margin: 10px 0;
 }
 .form-row input:not([type="submit"]) {
-    padding: 5px 10px;
+    padding: 5px;
+    width: 250px;
     font-family: ;
     background-color: ;
 }
-.form-row input:[type="submit"] {
+.form-row input[type="submit"] {
     padding: 5px;
+    margin: 5px;
     background-color: ;
-    font-size: large;
+    font-size: 16px;
+    font-weight: 100;
     border-radius: 5px;
-    color: ;
+    background-color: #413731;
+    color: white;
 }
 .form-row select {
     background-color: ;
-    padding: 4px;
+    padding: 5px;
+    width: 262.5px;
     border: thin solid black;
+}
+#scentDis {
+    background-color: #f1f1f1;
 }
 
 
 
 /* MEDIA QUERY */
-
 @media ONLY screen AND (max-width: 1200px) {
     .group1 {
         flex-direction: column;
