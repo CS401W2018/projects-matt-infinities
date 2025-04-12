@@ -1,6 +1,6 @@
 document.getElementById('myform').addEventListener('submit',function(event) {
     event.preventDefault();
-    alert("Form Submitted and Ready for Initial Verificaiton. Please wait, this will take few seconds only.");
+    alert("Form Submitted and Ready for Initial Verificaiton. We will send you an email after we finish the assessment. This will take around 3 to 4 business days. I assure to give you the recommended perfume combination. Thank you!");
     const bday = document.getElementById('birthdate').value;
     const email = document.getElementById('email').value;
     const phone = document.getElementById('phone').value;

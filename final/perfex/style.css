@@ -78,10 +78,43 @@ header {
 .spacer {
     height: 150px;
 }
+.containVideo {
+    width: 1000px;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 main {
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+.footLinks a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: #271e19;
+    padding: 10px;
+    border-radius: 10px;
+    width: 150px;
+    text-align: center;
+}
+.footLinks a:hover {
+    background-color: #4b3021;
 }
 .footContent {
     background-color: #413731;
@@ -110,6 +143,9 @@ main {
     margin-top: 0;
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
+footer {
+    margin-top: 0;
+}
 
 
 /* TABLE SCETION */
@@ -135,6 +171,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
 }
 #tablePage {
     padding: 20px;
@@ -248,6 +285,7 @@ form {
 fieldset {
     width: 650px;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(37, 31, 13, 0.541);
 }
 fieldset legend {
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
@@ -319,7 +357,7 @@ fieldset legend {
 
 /* MEDIA QUERY */
 @media ONLY screen AND (max-width: 1200px) {
-    .group1 {
+    .group1, .group1Ex {
         flex-direction: column;
         gap: 0;
         align-items: center;
@@ -343,16 +381,31 @@ fieldset legend {
     .introPic figure img {
         width: 400px;
     }
+    .imgWrap {
+        width: 700px;
+    }
+    .plant {
+        font-size: 24px;
+    }
+    .explain {
+        font-size: 16px;
+    }
     .perfumeTable thead th {
         font-size: 24px;       
     }
     .perfumeTable tbody td {
         font-size: 20px;
     }
+    #footSpacer {
+        margin-top: 100px;
+    }
 }
 @media ONLY screen AND (max-width: 900px) {
     #intPhrase {
         width: auto;
+    }
+    .brand {
+        font-size: 50px;
     }
     main {
         margin-left: 25px;
@@ -367,21 +420,40 @@ fieldset legend {
     #tabCap {
         width: auto;
     }
+    .imgWrap {
+        width: 450px;
+    }
     .perfumeTable thead th {
         padding: 5px;
     }
     .perfumeTable tbody td {
         padding: 0;
     }
+    .containVideo {
+        width: 500px;
+        height: 375px;
+    }
+    .footLinks {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .claims {
+        width: 400px;
+    }
+    #tabCap {
+        width: 500px;
+    }
+    #nav1 a {
+        font-size: 16px;
+    }
+    #nav2 a {
+        font-size: 16px;
+    }
+    span {
+        font-size: 16px;
+    }
 }
 @media ONLY screen AND (max-width: 600px) {
-    .group1 {
-        flex-direction: column;
-        gap: 0;
-        padding: 0;
-        align-items: center;
-        justify-content: space-evenly;
-    }
     header {
         order: -1;
     }
@@ -400,5 +472,11 @@ fieldset legend {
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
+    }
+    #tabCap {
+        width: 400px;
+    }
+    #footSpacer {
+        margin-top: 100px;
     }
 }
