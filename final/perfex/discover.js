@@ -8,8 +8,8 @@ document.getElementById('myform').addEventListener('submit',function(event) {
     const activity = document.getElementById('activity').value;
     const duration = document.getElementById('duration').value;
     
-    if (weather === "blank" || !activity === "blank") {
-        alert("ERROR! You need to fill 2 information. Weather and Activity.");
+    if (weather === "blank" || activity === "blank" || duration === "blank") {
+        alert("ERROR! You need to all 3 information. Weather, Activity, and Duration.");
         return;
     }
 
