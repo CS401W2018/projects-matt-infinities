@@ -82,8 +82,13 @@ header {
     width: 1000px;
     height: 750px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.refer {
+    font-size: 10px;
+    width: 290px;
 }
 main {
     margin-left: 50px;
@@ -265,10 +270,12 @@ footer {
 .plant {
     font-size: 38px;
     font-weight: 500;
+    margin: 0;
 }
 .explain {
     font-size: 28px;
     font-weight: 200;
+    margin: 0;
 }
 
 
