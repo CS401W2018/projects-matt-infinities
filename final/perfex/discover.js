@@ -9,7 +9,7 @@ document.getElementById('myform').addEventListener('submit',function(event) {
     const duration = document.getElementById('duration').value;
     
     if (weather === "blank" || !activity === "blank") {
-        alert("ERROR! You need to fill 3 information. Weather and Activity.");
+        alert("ERROR! You need to fill 2 information. Weather and Activity.");
         return;
     }
 
