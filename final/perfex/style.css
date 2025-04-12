@@ -499,6 +499,12 @@ fieldset legend {
         width: 300px;
         height: 350px;
     }
+    .motto1 {
+        font-size: 32px;
+    }
+    .catch {
+        font-size: 20px;
+    }
     .introPic figure img {
         width: 300px;
 }
