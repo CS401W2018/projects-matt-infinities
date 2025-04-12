@@ -285,7 +285,6 @@ form {
 fieldset {
     width: 650px;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px 5px rgba(37, 31, 13, 0.541);
 }
 fieldset legend {
     font-family: 'Quicksand', Arial, Helvetica, sans-serif;
