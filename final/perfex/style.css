@@ -78,7 +78,7 @@ header {
 .spacer {
     height: 150px;
 }
-.containVideo {
+.containVideo, .containVideo1 {
     width: 1000px;
     height: 750px;
     display: flex;
@@ -431,6 +431,10 @@ fieldset legend {
         padding: 0;
     }
     .containVideo {
+        width: 350px;
+        height: 375px;
+    }
+    .containVideo1 {
         width: 450px;
         height: 375px;
     }
@@ -492,8 +496,10 @@ fieldset legend {
     .claims {
         width: 300px;
     }
-    .containVideo {
-        width: 450px;
+    .containVideo1 {
+        width: 300px;
         height: 350px;
     }
+    .introPic figure img {
+        width: 300px;
 }
