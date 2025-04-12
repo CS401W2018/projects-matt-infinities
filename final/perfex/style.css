@@ -422,7 +422,7 @@ fieldset legend {
         width: auto;
     }
     .imgWrap {
-        width: 450px;
+        width: 350px;
     }
     .perfumeTable thead th {
         padding: 5px;
@@ -493,9 +493,7 @@ fieldset legend {
         width: 300px;
     }
     .containVideo {
-        width: 300px;
+        width: 450px;
         height: 350px;
-    }.imgWrap {
-        width: 300px;
     }
 }
