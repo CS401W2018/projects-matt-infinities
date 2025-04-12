@@ -360,6 +360,7 @@ fieldset legend {
     .group1, .group1Ex {
         flex-direction: column;
         gap: 0;
+        margin-bottom: 0;
         align-items: center;
         justify-content: space-evenly;
     }
@@ -430,7 +431,7 @@ fieldset legend {
         padding: 0;
     }
     .containVideo {
-        width: 500px;
+        width: 450px;
         height: 375px;
     }
     .footLinks {
@@ -451,6 +452,9 @@ fieldset legend {
     }
     span {
         font-size: 16px;
+    }
+    .footLinks a {
+        font-size: 12px;
     }
 }
 @media ONLY screen AND (max-width: 600px) {
@@ -478,5 +482,20 @@ fieldset legend {
     }
     #footSpacer {
         margin-top: 100px;
+    }
+    .brandFoot {
+        font-size: 35px;
+    }
+    .copyright, .claims {
+        font-size: 12px;
+    }
+    .claims {
+        width: 300px;
+    }
+    .containVideo {
+        width: 300px;
+        height: 350px;
+    }.imgWrap {
+        width: 300px;
     }
 }
